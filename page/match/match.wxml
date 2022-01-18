@@ -1,0 +1,75 @@
+<view class="app bg">
+    <view id="match">
+        <view class="open-box" wx:if="{{showTip}}">
+            <button bindopensetting="openSetting" class="open" openType="openSetting"> 点击授权用户信息-即可查看配对 </button>
+        </view>
+        <view class="all">
+            <view class="con">
+                <view class="banner">
+                    <image class="top_banner" mode="widthFix" src="../../images/m_top.png"></image>
+                </view>
+                <view class="main {{userInfo&&userInfo.gender==2?'reverse':''}}">
+                    <view class="_left">
+                        <view class="con_img1">
+                            <view class="con_img2">
+                                <view bindtap="showSelBox" class="con_img" data-type="1" id="xz{{gg_data.xzID}}">
+                                    <image mode="widthFix" src="{{gg_data.imgUrl}}"></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="xz_name">
+                            <text>{{gg_data.xzName}}</text>
+                            <view class="gender" wx:if="{{userInfo.gender}}">
+                                <image mode="widthFix" src="../../images/gg.png"></image>
+                            </view>
+                        </view>
+                        <view class="nick_name" wx:if="{{userInfo&&userInfo.gender==1}}">{{userInfo.nickName}}</view>
+                    </view>
+                    <view class="middle">
+                        <view class="img_box">
+                            <image mode="aspectFit" src="../../images/m_match.png"></image>
+                        </view>
+                    </view>
+                    <view class="_right">
+                        <view class="con_img1">
+                            <view class="con_img2">
+                                <view bindtap="showSelBox" class="con_img" data-type="2" id="xz{{mm_data.xzID}}">
+                                    <image mode="widthFix" src="{{mm_data.imgUrl}}"></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="xz_name">
+                            <text>{{mm_data.xzName}}</text>
+                            <view class="gender" wx:if="{{userInfo.gender}}">
+                                <image mode="widthFix" src="../../images/mm.png"></image>
+                            </view>
+                        </view>
+                        <view class="nick_name" wx:if="{{userInfo&&userInfo.gender==2}}">{{userInfo.nickName}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="bottom">
+                <view class="button">
+                    <button bindgetuserinfo="getUserInfo" class="btn-reset" openType="getUserInfo" wx:if="{{!hasUserInfo&&canIUse}}"></button>
+                    <view bindtap="gotoResult" class="btn">查看配对结果</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view bindtap="hideSelBox" class="maskPop" wx:if="{{showSelBox}}">
+    <view class="title">选择<text wx:if="{{xzType==1}}">男生</text>
+        <text wx:if="{{xzType==2}}">女生</text>星座</view>
+    <view class="selBox">
+        <view class="ul">
+            <view catchtap="selectItem" class="list_box" data-id="{{item.id}}" data-name="{{item.text}}" wx:for="{{objectArray}}" wx:key="id">
+                <button bindgetuserinfo="getUserInfo" class="img_btn" data-id="{{item.id}}" data-name="{{item.text}}" openType="getUserInfo" wx:if="{{!hasUserInfo&&canIUse}}"></button>
+                <view class="con_img" id="xz{{item.id}}">
+                    <image mode="widthFix" src="{{item.imgSrc}}"></image>
+                </view>
+                <view class="text">{{item.text}}</view>
+                <view class="date">{{item.date}}</view>
+            </view>
+        </view>
+    </view>
+</view>

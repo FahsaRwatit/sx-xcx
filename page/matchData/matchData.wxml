@@ -1,0 +1,77 @@
+<view class="app bg" style="background-image: url('{{host}}/images/xzbg.png?v=1.0')">
+    <view id="matchData">
+        <view class="detail">
+            <view class="banner">
+                <image class="top_banner" mode="widthFix" src="../../images/m_top.png"></image>
+            </view>
+            <view class="main {{userInfo&&userInfo.gender==2?'reverse':''}}">
+                <view class="_left">
+                    <view class="con_img1">
+                        <view class="con_img2">
+                            <view class="con_img" id="xz{{gg_data.xzID}}">
+                                <image mode="widthFix" src="{{gg_data.imgUrl}}"></image>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="xz_name">
+                        <text>{{gg_data.xzName}}</text>
+                        <view class="gender" wx:if="{{userInfo.gender}}">
+                            <image mode="widthFix" src="../../images/gg.png"></image>
+                        </view>
+                    </view>
+                </view>
+                <view class="middle">
+                    <view class="img_box">
+                        <image mode="aspectFit" src="../../images/m_match.png"></image>
+                    </view>
+                </view>
+                <view class="_right">
+                    <view class="con_img1">
+                        <view class="con_img2">
+                            <view class="con_img" id="xz{{mm_data.xzID}}">
+                                <image mode="widthFix" src="{{mm_data.imgUrl}}"></image>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="xz_name">
+                        <text>{{mm_data.xzName}}</text>
+                        <view class="gender" wx:if="{{userInfo.gender}}">
+                            <image mode="widthFix" src="../../images/mm.png"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="tips">
+                <view class="dp">{{match_data.jg}}</view>
+                <view class="tBox">
+                    <view>
+                        <text>配对指数：</text>{{match_data.zs}}</view>
+                    <view>
+                        <text>配对比重：</text>{{match_data.bz}}</view>
+                    <view>
+                        <text>两情相悦指数：</text>{{match_data.lq}}</view>
+                    <view>
+                        <text>天长地久指数：</text>{{match_data.cj}}</view>
+                </view>
+            </view>
+            <view class="content">
+                <view class="session">
+                    <view class="jy _title">
+                        <text>恋爱建议</text>
+                    </view>
+                    <view class="text">{{match_data.jy}}</view>
+                    <view class="zy _title">
+                        <text>注意事项</text>
+                    </view>
+                    <view class="text">{{match_data.zy}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="{{showAd?'show':'hide'}} adContainer">
+            <ad adTheme="white" adType="video" bindclose="adClose" binderror="adError" bindload="adLoad" unitId="adunit-53369560b9987e89"></ad>
+        </view>
+        <view class="invite_btn">
+            <button id="invite_friend" openType="share">分享给TA</button>
+        </view>
+    </view>
+</view>

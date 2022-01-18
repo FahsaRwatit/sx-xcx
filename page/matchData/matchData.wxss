@@ -1,0 +1,281 @@
+#matchData {
+    padding-bottom: 80px;
+}
+
+#matchData .detail {
+    font-size: 28rpx;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    top: -148rpx;
+    left: 0;
+    width: 100%;
+}
+
+.banner Image {
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 60rpx 40rpx 0rpx;
+    position: relative;
+}
+
+.main.reverse {
+    flex-direction: row-reverse;
+}
+
+.main ._left {
+    width: 280rpx;
+}
+
+.main .con_img1 {
+    width: 280rpx;
+    height: 280rpx;
+    padding: 20rpx;
+    border-radius: 250rpx;
+    background-color: rgba(255,255,255,.5);
+}
+
+.main .con_img2 {
+    width: 240rpx;
+    height: 240rpx;
+    padding: 20rpx;
+    border-radius: 250rpx;
+    background-color: rgba(255,255,255,.8);
+}
+
+.main .con_img {
+    position: relative;
+    border-radius: 250rpx;
+    background-color: #cccccc;
+    display: flex;
+    align-items: center;
+}
+
+.main .con_img image {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 250rpx;
+}
+
+.main ._right {
+    width: 280rpx;
+}
+
+.main .xz_name {
+    margin-top: 30rpx;
+    text-align: center;
+    font-size: 0rpx;
+    line-height: 50rpx;
+}
+
+.main .xz_name text {
+    font-size: 36rpx;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main .xz_name .gender {
+    width: 40rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    border-radius: 40rpx;
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12rpx;
+}
+
+.main .xz_name .gender image {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main .nick_name {
+    border-radius: 30rpx;
+    line-height: 46rpx;
+    background-color: #fff3a7;
+    margin-top: 10rpx;
+    text-align: center;
+    font-size: 24rpx;
+}
+
+.main .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80rpx;
+    height: 280rpx;
+}
+
+.main .middle .img_box {
+    width: 80rpx;
+    height: 80rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100rpx;
+    background-color: #ffffff;
+}
+
+.main .middle image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.tips {
+    margin: 40rpx 40rpx 10rpx 40rpx;
+    padding: 40rpx;
+    border-radius: 20rpx;
+    background-color: #ffffff;
+}
+
+.tips .dp {
+    font-size: 40rpx;
+    color: #ff628e;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20rpx;
+}
+
+.tips .tBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tips .tBox>view {
+    width: 50%;
+}
+
+.tips .tBox>view text {
+    font-weight: bold;
+}
+
+.content {
+    margin: 0rpx 40rpx 40rpx 40rpx;
+    padding: 40rpx;
+    border-radius: 20rpx;
+    background-color: #ffffff;
+}
+
+.content .session ._title text {
+    display: inline-block;
+    border-radius: 50rpx;
+    line-height: 46rpx;
+    padding: 0 20rpx;
+    font-size: 28rpx;
+}
+
+.content .session ._title.jy text {
+    color: #005b71;
+    background-color: #b2f0ff;
+}
+
+.content .session ._title.zy text {
+    color: #923434;
+    background-color: #ffc0c0;
+}
+
+.content .session .text {
+    font-size: 28rpx;
+    margin: 20rpx 0 40rpx;
+}
+
+.invite_btn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.invite_btn button {
+    font-size: 28rpx;
+    background-color: #ff8c8c;
+    border-radius: 0rpx;
+    padding: 30rpx 60rpx;
+    color: #ffffff;
+    display: block;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.invite_btn button:after {
+    display: none;
+}
+
+#xz0 {
+    background: #80ad60;
+}
+
+#xz1 {
+    background: #eab94f;
+}
+
+#xz2 {
+    background: #8660ad;
+}
+
+#xz3 {
+    background: #e3a570;
+}
+
+#xz4 {
+    background: #ff9f7e;
+}
+
+#xz5 {
+    background: #f78cbd;
+}
+
+#xz6 {
+    background: #d77a78;
+}
+
+#xz7 {
+    background: #6f89cf;
+}
+
+#xz8 {
+    background: #3f84ca;
+}
+
+#xz9 {
+    background: #9c7c6b;
+}
+
+#xz10 {
+    background: #7bc4d6;
+}
+
+#xz11 {
+    background: #6fbc9c;
+}
+
+.adContainer {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 40rpx 20rpx 0rpx;
+}
+
+.adContainer video {
+    width: 100%;
+}
+
+.adContainer ad {
+    width: 100%;
+}

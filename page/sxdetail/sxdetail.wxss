@@ -1,0 +1,464 @@
+#result {
+  padding-bottom: 80px;
+}
+
+#result .detail {
+  font-size: 28rpx;
+  width: 94%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#result .detail .top_box {
+  width: 100%;
+  height: auto;
+  padding: 50rpx 0;
+  background-size: cover;
+  font-size: 0;
+}
+
+#result .detail .main {
+  background: #ffffff;
+  border-radius: 8rpx;
+}
+
+#result .detail .top_box {
+  text-align: center;
+  padding: 20rpx 0rpx 40rpx;
+}
+
+#result .detail .top_box .astro {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+}
+
+#result .detail .top_box .astro .imgBox {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100rpx;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+#result .detail .top_box .astro image {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+  display: inline-box;
+  vertical-align: middle;
+}
+
+#result .detail .top_box .astro image.headgear {
+  position: absolute;
+  width: 180rpx;
+  height: 180rpx;
+  top: -24rpx;
+  left: -14rpx;
+}
+
+#result .detail .top_box .astro em {
+  height: 5rpx;
+  display: inline-block;
+  padding: 0 3rpx;
+  border-radius: 8rpx;
+  line-height: 5rpx;
+  color: #fff;
+  font-style: normal;
+  font-size: 24rpx;
+}
+
+#result .detail .top_box .astro em i {
+  float: right;
+  background: url(../images/arrow.png-do-not-use-local-path-./page/result/result.wxss&73&14) no-repeat center;
+  margin: 0.14rpx 0 0 2rpx;
+  background-size: 100%;
+  width: 0.25rpx;
+  height: 0.25rpx;
+  display: inline-block;
+  display: none;
+}
+
+#result .detail .top_box .top_desc {
+  color: #333;
+  line-height: 6rpx;
+  text-align: center;
+  font-size: 24rpx;
+  font-weight: 500;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 2rpx;
+  font-weight: normal;
+  line-height: normal;
+  margin-left: 20rpx;
+}
+
+#result .detail .top_box .top_desc .t1 {
+  display: block;
+  line-height: 1;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333333;
+  padding-bottom: 10rpx;
+}
+
+#result .detail .top_box .top_desc .t2 {
+  font-size: 24rpx;
+}
+
+#result .detail .con {
+  color: #333;
+  padding: 30rpx 40rpx;
+}
+
+#result .detail .con strong {
+  display: block;
+  color: #689ce2;
+  font-size: 24rpx;
+}
+
+#result .detail .con p {
+  margin-bottom: 24rpx;
+}
+
+#result .detail .con p span {
+  line-height: 1.6;
+}
+
+#result .detail .line {
+  width: 100%;
+  height: 1px;
+  display: block;
+  border: 1rpx solid #f2f2f2;
+  margin: 16rpx 0rpx 40rpx;
+}
+
+.invite_btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.invite_btn button {
+  font-size: 28rpx;
+  background-color: #ff8c8c;
+  border-radius: 0rpx;
+  padding: 30rpx 60rpx;
+  color: #ffffff;
+  display: block;
+  line-height: normal;
+  font-weight: bold;
+}
+
+.invite_btn button:after {
+  display: none;
+}
+
+#result .detail .con .c_cont {
+  display: none;
+}
+
+#result .detail .con .c_cont.on {
+  display: block;
+}
+
+#result .detail .con .c_cont .luckMain>view {
+  margin-bottom: 24rpx;
+  font-size: 28rpx;
+}
+
+#result .detail .con .c_cont .luckMain>view strong {
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+#result .detail .con .c_cont .luckMain>view .span_title image {
+  width: 28rpx;
+  height: 28rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4rpx;
+}
+
+#result .detail .con .c_cont .luckMain>view .span_title {
+  font-size: 0;
+  border-radius: 8rpx;
+  color: #fff;
+  display: inline-block;
+  padding: 8rpx 12rpx;
+  margin-right: 10rpx;
+  background-size: 30rpx 30rpx;
+  line-height: 34rpx;
+  vertical-align: middle;
+  margin-top: -4rpx;
+}
+
+#result .detail .con .c_cont .luckMain>view text {
+  line-height: 1.8;
+}
+
+.c_cont .p1 {
+  background-color: #80bee4;
+  background-position: 10rpx center;
+  background-repeat: no-repeat;
+}
+
+.c_cont .p2 {
+  background-color: #ea749e;
+  background-position: 10rpx center;
+  background-repeat: no-repeat;
+}
+
+.c_cont .p3 {
+  background-color: #ab92dc;
+  background-position: 10rpx center;
+  background-repeat: no-repeat;
+}
+
+.c_cont .p4 {
+  background-color: #f39f5b;
+  background-position: 10rpx center;
+  background-repeat: no-repeat;
+}
+
+.c_cont .p5 {
+  background-color: #7fbe58;
+  background-position: 10rpx center;
+  background-repeat: no-repeat;
+}
+
+#result .detail .a_cont .con {
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+}
+
+#result .detail .a_cont .con div {
+  height: 42rpx;
+  line-height: 42rpx;
+  color: #666;
+  padding: 0 26rpx 0 26rpx;
+  position: relative;
+}
+
+#result .detail .a_cont .con div b {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-weight: 400;
+  display: inline-block;
+  padding-right: 2rpx;
+}
+
+#result .detail .a_cont .con div p {
+  position: relative;
+  height: 24rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  display: inline-block;
+  width: 4rpx;
+}
+
+#result .detail .a_cont .con div p span {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  border-radius: 10rpx;
+  left: 0;
+}
+
+#result .detail .a_cont .con div strong {
+  display: inline-block;
+  padding-left: 2rpx;
+}
+
+#result .detail .a_cont .con div:nth-child(1) span {
+  background-color: #fe2955;
+  background-image: -webket-linear-gradient(90deg,#ff0844 0%,#ffb199 100%);
+  background-image: linear-gradient(90deg,#ff0844 0%,#ffb199 100%);
+}
+
+#result .detail .a_cont .con div:nth-child(2) span {
+  background-color: #08b05b;
+  background-image: -webket-linear-gradient(-90deg,#2af598 0%,#009a45 100%);
+  background-image: linear-gradient(-90deg,#2af598 0%,#009a45 100%);
+}
+
+#result .detail .a_cont .con div:nth-child(3) span {
+  background-color: #fca483;
+  background-image: linear-gradient(-90deg,#f6d365 0%,#fda085 100%);
+  background-image: linear-gradient(-90deg,#f6d365 0%,#fda085 100%);
+}
+
+#result .detail .a_cont .con div:nth-child(4) span {
+  background-color: #3ebbfe;
+  background-image: -webket-linear-gradient(to right,#4facfe 0%,#00f2fe 100%);
+  background-image: linear-gradient(to right,#4facfe 0%,#00f2fe 100%);
+}
+
+#result .detail .a_cont .con div:nth-child(5) span {
+  background-color: #8443df;
+  background-image: -webket-linear-gradient(90deg,#7028e4 0%,#e5b2ca 100%);
+  background-image: linear-gradient(90deg,#7028e4 0%,#e5b2ca 100%);
+}
+
+#result .detail .b_cont .con b {
+  color: #333;
+  font-size: 24rpx;
+}
+
+#result .detail .b_cont .con span {
+  font-weight: bold;
+}
+
+#invite_friend_link {
+  display: inline-block;
+}
+
+.bot {
+  width: 100%;
+  height: 40rpx;
+}
+
+#tab_box {
+  padding: 40rpx 40rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tab_box text {
+  background: #fff;
+  padding: 10rpx 30rpx;
+  color: #666;
+}
+
+#tab_box text.on {
+  color: #333;
+  font-weight: bold;
+  border-radius: 6rpx;
+  background: #9F0F0F;
+}
+
+#result .detail .top_box #xz0 {
+  background: #80ad60;
+}
+
+#result .detail .top_box #xz1 {
+  background: #eab94f;
+}
+
+#result .detail .top_box #xz2 {
+  background: #8660ad;
+}
+
+#result .detail .top_box #xz3 {
+  background: #e3a570;
+}
+
+#result .detail .top_box #xz4 {
+  background: #ff9f7e;
+}
+
+#result .detail .top_box #xz5 {
+  background: #f78cbd;
+}
+
+#result .detail .top_box #xz6 {
+  background: #d77a78;
+}
+
+#result .detail .top_box #xz7 {
+  background: #6f89cf;
+}
+
+#result .detail .top_box #xz8 {
+  background: #3f84ca;
+}
+
+#result .detail .top_box #xz9 {
+  background: #9c7c6b;
+}
+
+#result .detail .top_box #xz10 {
+  background: #7bc4d6;
+}
+
+#result .detail .top_box #xz11 {
+  background: #6fbc9c;
+}
+
+.luckTip {
+  display: flex;
+}
+
+.luckTip>view {
+  width: 50%;
+}
+
+.luckTip.box>view._left {
+  width: 56%;
+}
+
+.luckTip.box>view._right {
+  width: 44%;
+}
+
+.luckTip.dp {
+  display: block;
+  width: 100%;
+}
+
+.luckTip .list {
+  display: flex;
+  margin-bottom: 14rpx;
+  align-items: center;
+  height: 40rpx;
+  line-height: 40rpx;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.luckTip .list .title {
+  font-weight: bold;
+  margin-right: 16rpx;
+  font-size: 28rpx;
+}
+
+.luckTip .list .text {
+  font-size: 26rpx;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.luckTip .list .text .star {
+  margin-right: 2rpx;
+  display: flex;
+  align-items: center;
+}
+
+.luckTip .list .text .star image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: -3rpx;
+}
+
+.adContainer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 40rpx 20rpx 0rpx;
+}
+
+.adContainer video {
+  width: 100%;
+}

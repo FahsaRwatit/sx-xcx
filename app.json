@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/result/result",
+    "page/myCenter/myCenter",
+    "page/match/match",
+    "page/matchData/matchData",
+    "page/xingzuo/xingzuo",
+    "page/sxdetail/sxdetail",
+    "page/zhiwensm/zhiwensm",
+    "page/sxpeidui/sxpeidui"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9F0F0F",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#9F0F0F"
+  },
+  "tabBar": {
+    "color": "#52220d",
+    "selectedColor": "#52220d",
+    "borderStyle": "black",
+    "backgroundColor": "#f6f6f6",
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "text": "生肖运程",
+        "iconPath": "images/icon_xzys.png",
+        "selectedIconPath": "images/icon_xzys_HL.png"
+      },
+      {
+        "pagePath": "page/zhiwensm/zhiwensm",
+        "text": "星座配对",
+        "iconPath": "images/icon_match.png",
+        "selectedIconPath": "images/icon_match_HL.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx8abaf00ee8c3202e"
+  ],
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}

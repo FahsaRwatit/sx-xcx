@@ -1,0 +1,65 @@
+@import "../../../app.wxss";
+
+.maskPop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5001;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 460rpx;
+    height: 100%;
+}
+
+.main .box {
+    padding: 40rpx 60rpx;
+    width: 100%;
+    min-height: 520rpx;
+    font-size: 24rpx;
+    border-radius: 10rpx;
+    background-color: #ffffff;
+}
+
+.main .box .title {
+    font-size: 38rpx;
+    font-weight: bold;
+    text-align: left;
+}
+
+.main .box .text {
+    margin-top: 30rpx;
+    line-height: 40rpx;
+}
+
+.main .box .text view {
+    font-size: 28rpx;
+    margin-bottom: 20rpx;
+}
+
+.main .close {
+    border-radius: 100rpx;
+    width: 80rpx;
+    height: 80rpx;
+    border: 4rpx solid #ccc;
+    margin: 40rpx auto 0rpx;
+    color: #cccccc;
+    line-height: 80rpx;
+    text-align: center;
+}
+
+.main .close image {
+    width: 100%;
+    height: 100%;
+}

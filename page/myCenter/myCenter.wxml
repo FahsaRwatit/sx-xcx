@@ -1,0 +1,57 @@
+<view class="app">
+    <view id="myCenter">
+        <view class="container">
+            <view class="userinfo">
+                <button bindgetuserinfo="getUserInfo" openType="getUserInfo" wx:if="{{!hasUserInfo&&canIUse}}">
+                    <view class="main">
+                        <image class="headgear" mode="widthFix" src="../../images/headgear.png"></image>
+                        <view class="imgBox">
+                            <image class="userinfo-avatar" mode="aspectFit" src="{{defUserInfo.avatarUrl}}"></image>
+                            <view class="userinfo-nickname">
+                                <text>{{defUserInfo.nickName}}</text>
+                                <image class="user-gender gg" mode="aspectFit" src="../../images/gg.png" wx:if="{{defUserInfo.gender==1}}"></image>
+                                <image class="user-gender mm" mode="aspectFit" src="../../images/mm.png" wx:if="{{defUserInfo.gender==2}}"></image>
+                            </view>
+                        </view>
+                    </view>
+                </button>
+                <block wx:else>
+                    <button bindgetuserinfo="getUserInfo" openType="getUserInfo" wx:if="{{canIUse}}">
+                        <view class="main">
+                            <image class="headgear" mode="widthFix" src="../../images/headgear.png"></image>
+                            <view class="imgBox">
+                                <image class="userinfo-avatar" mode="aspectFit" src="{{userInfo.avatarUrl}}"></image>
+                                <view class="userinfo-nickname">
+                                    <text>{{userInfo.nickName}}</text>
+                                    <image class="user-gender gg" mode="aspectFit" src="../../images/gg.png" wx:if="{{userInfo.gender==1}}"></image>
+                                    <image class="user-gender mm" mode="aspectFit" src="../../images/mm.png" wx:if="{{userInfo.gender==2}}"></image>
+                                </view>
+                            </view>
+                        </view>
+                    </button>
+                </block>
+                <view class="updataInfo">
+                    <button bindgetuserinfo="getUserInfo" class="btn-reset" hoverClass="active" openType="getUserInfo">
+            刷新
+          </button>
+                </view>
+            </view>
+        </view>
+        <view class="c_list_box">
+            <view class="c_list">
+                <view bindtap="sharePage" class="flex_box">
+                    <image class="c_icon" mode="aspectFit" src="../../images/nav_icon_share.png"></image>
+                    <button class="reset_btn" openType="share">分享</button>
+                    <image class="c_arrow" mode="aspectFit" src="../../images/icon_arrow_right.png"></image>
+                </view>
+            </view>
+            <view class="c_list">
+                <view class="flex_box">
+                    <image class="c_icon" mode="aspectFit" src="../../images/nav_icon_advice.png"></image>
+                    <button class="reset_btn" openType="contact">反馈意见</button>
+                    <image class="c_arrow" mode="widtaspectFithFix" src="../../images/icon_arrow_right.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

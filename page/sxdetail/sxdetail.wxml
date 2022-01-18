@@ -1,0 +1,405 @@
+<view class="app bg" style="background-image: url('{{host}}/images/xzbg.png?v=1.0')">
+    <view id="result">
+        <view class="detail">
+            <view class="top_box">
+                <view class="astro">
+                    <view class="imgBox" id="xz{{xzID}}">
+                        <image mode="widthFix" src="{{imgUrl}}"></image>
+                    </view>
+                </view>
+                <view class="top_desc">
+                    <text class="t1">{{sxNametxt}}</text>
+                    <text class="t2">{{todayDate}}</text>
+                </view>
+            </view>
+            <view class="main">
+                <view id="tab_box">
+                    <text bindtap="select" class="{{selectedtab==0?'on':''}}" data-index="0">今日</text>
+                    <text bindtap="select" class="{{selectedtab==1?'on':''}}" data-index="1">本周</text>
+                    <text bindtap="select" class="{{selectedtab==2?'on':''}}" data-index="2">本月</text>
+                    <text bindtap="select" class="{{selectedtab==3?'on':''}}" data-index="3">今年</text>
+                    <!-- <text bindtap="select" class="{{selectedtab==4?'on':''}}" data-index="4">今年</text> -->
+                </view>
+                <view class="con">
+                    <view class="c_cont {{selectedtab==index?'on':''}}" data-index="{{index}}" wx:for="{{ys_data}}">
+
+                        
+
+                    
+                    
+                        <!-- <block wx:if="{{item.all}}">
+                            <block wx:if="{{index<=1}}">
+                                <view class="luckTip box">
+                                    <view class="_left">
+                                        <view class="list">
+                                            <view class="title">综合运势</view>
+                                            <view class="text">
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.zh>=1?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.zh>=2?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.zh>=3?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.zh>=4?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.zh>=5?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                            </view>
+                                        </view>
+                                        <view class="list">
+                                            <view class="title">工作运势</view>
+                                            <view class="text">
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.sy>=1?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.sy>=2?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.sy>=3?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.sy>=4?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.sy>=5?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                            </view>
+                                        </view>
+                                        <view class="list">
+                                            <view class="title">爱情运势</view>
+                                            <view class="text">
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.aq>=1?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.aq>=2?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.aq>=3?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.aq>=4?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.aq>=5?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                            </view>
+                                        </view>
+                                        <view class="list">
+                                            <view class="title">理财运势</view>
+                                            <view class="text">
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.cf>=1?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.cf>=2?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.cf>=3?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.cf>=4?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.cf>=5?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                    <view class="_right">
+                                        <view class="list">
+                                            <view class="title">健康指数</view>
+                                            <view class="text">
+                        {{item.all.jk}}%
+                      </view>
+                                        </view>
+                                        <view class="list">
+                                            <view class="title">速配星座</view>
+                                            <view class="text">
+                        {{item.all.sp}}
+                      </view>
+                                        </view>
+                                        <view class="list">
+                                            <view class="title">幸运颜色</view>
+                                            <view class="text">
+                        {{item.all.ys}}
+                      </view>
+                                        </view>
+                                        <view class="list">
+                                            <view class="title">幸运数字</view>
+                                            <view class="text">
+                        {{item.all.sz}}
+                      </view>
+                                        </view>
+                                    </view>
+                                </view>
+                                <view class="luckTip dp">
+                                    <view class="list">
+                                        <view class="title">短评</view>
+                                        <view class="text">
+                              {{item.all.dp}}
+                            </view>
+                                    </view>
+                                </view>
+                            </block>
+                            <block wx:if="{{index>1&&index<=4}}">
+                                <view class="luckTip">
+                                    <view class="_left">
+                                        <view class="list">
+                                            <view class="title">综合运势</view>
+                                            <view class="text">
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.zh>=1?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.zh>=2?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.zh>=3?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.zh>=4?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.zh>=5?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                            </view>
+                                        </view>
+                                        <view class="list">
+                                            <view class="title">工作运势</view>
+                                            <view class="text">
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.sy>=1?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.sy>=2?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.sy>=3?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.sy>=4?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.sy>=5?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                            </view>
+                                        </view>
+                                        <view class="list">
+                                            <view class="title">爱情运势</view>
+                                            <view class="text">
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.aq>=1?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.aq>=2?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.aq>=3?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.aq>=4?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.aq>=5?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                            </view>
+                                        </view>
+                                        <view class="list">
+                                            <view class="title">理财运势</view>
+                                            <view class="text">
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.cf>=1?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.cf>=2?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.cf>=3?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.cf>=4?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.cf>=5?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                    <view class="_right">
+                                        <view class="list">
+                                            <view class="title">健康指数</view>
+                                            <view class="text">
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.jk>=1?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.jk>=2?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.jk>=3?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.jk>=4?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                                <view class="star">
+                                                    <image mode="aspectFit" src="{{item.all.jk>=5?'../../images/star.png':'../../images/star_d.png'}}"></image>
+                                                </view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                                <view class="luckTip dp">
+                                    <view class="list">
+                                        <view class="title">短评</view>
+                                        <view class="text">
+                              {{item.all.dp}}
+                            </view>
+                                    </view>
+                                </view>
+                            </block>
+                            <view class="line"></view>
+                        </block> -->
+
+
+                        <view class="luckMain">
+
+
+
+                        <!-- 今日运势 -->
+                        <block wx:if="{{index == 0}}">
+                            <rich-text nodes="{{item.sfd_content}}"></rich-text>
+                        </block>
+
+                        <!-- 本周运势 -->
+                        <block wx:if="{{index == 1}}">
+                            <rich-text nodes="{{item.sfw_content}}"></rich-text>
+                        </block>
+
+                        <!-- 本月运势 -->
+                        <block wx:if="{{index == 2}}">
+                            <rich-text nodes="{{item.sfm_content}}"></rich-text>
+                        </block>
+
+                        <!-- 今年运势 -->
+                        <block wx:if="{{index == 3}}">
+                            <!-- <rich-text nodes="{{item.sfy_content}}"></rich-text> -->
+
+                            <view>
+                                <view class="span_title p1">
+                                    <image mode="widthFix" src="../../images/zh.png"></image>
+                                    <strong>整体运势</strong>
+                                </view>
+                                <rich-text nodes="{{item.sfy_content}}"></rich-text>
+                            </view>
+
+                            <view>
+                                <view class="span_title p4">
+                                    <image mode="widthFix" src="../../images/cf.png"></image>
+                                    <strong>财富运势</strong>
+                                </view>
+                                <rich-text nodes="{{item.sfy_caiyun}}"></rich-text>
+                            </view>
+
+                            <view>
+                                <view class="span_title p3">
+                                    <image mode="widthFix" src="../../images/sy.png"></image>
+                                    <strong>事业学业</strong>
+                                </view>
+                                <rich-text nodes="{{item.sfy_shiye}}"></rich-text>
+                            </view>
+
+                            <view>
+                                <view class="span_title p2">
+                                    <image mode="widthFix" src="../../images/aq.png"></image>
+                                    <strong>感情运势</strong>
+                                </view>
+                                <rich-text nodes="{{item.sfy_ganqin}}"></rich-text>
+                            </view>
+
+                            <view>
+                                <view class="span_title p5">
+                                    <image mode="widthFix" src="../../images/jk.png"></image>
+                                    <strong>健康运势</strong>
+                                </view>
+                                <rich-text nodes="{{item.sfy_jiankang}}"></rich-text>
+                            </view>
+
+                            <view>
+                                <view class="span_title p5">
+                                    <image mode="widthFix" src="../../images/jk.png"></image>
+                                    <strong>开运锦囊</strong>
+                                </view>
+                                <rich-text nodes="{{item.sfy_kaiyun}}"></rich-text>
+                            </view>
+
+                            <view>
+                                <view class="span_title p5">
+                                    <image mode="widthFix" sr  c="../../images/jk.png"></image>
+                                    <strong>不同年份的{{sxNametxt}}运势</strong>
+                                </view>
+                                <rich-text nodes="{{item.sfy_diffman}}"></rich-text>
+                            </view>
+
+
+                        </block>
+
+                        <!-- <rich-text nodes="{{item.sfd_content}}"></rich-text> -->
+
+                       
+
+
+                            <!-- <view>
+                                <view class="span_title p1">
+                                    <image mode="widthFix" src="../../images/zh.png"></image>
+                                    <strong>综合运势</strong>
+                                </view>
+                                <text>{{item.zh}}</text>
+                            </view> -->
+                            <!-- <view>
+                                <view class="span_title p2">
+                                    <image mode="widthFix" src="../../images/aq.png"></image>
+                                    <strong>爱情运势</strong>
+                                </view>
+                                <text>{{item.aq}}</text>
+                            </view> -->
+                            <!-- <view>
+                                <view class="span_title p3">
+                                    <image mode="widthFix" src="../../images/sy.png"></image>
+                                    <strong>事业学业</strong>
+                                </view>
+                                <text>{{item.sy}}</text>
+                            </view> -->
+                            <!-- <view>
+                                <view class="span_title p4">
+                                    <image mode="widthFix" src="../../images/cf.png"></image>
+                                    <strong>财富运势</strong>
+                                </view>
+                                <text>{{item.cf}}</text>
+                            </view> -->
+                            <!-- <view>
+                                <view class="span_title p5">
+                                    <image mode="widthFix" src="../../images/jk.png"></image>
+                                    <strong>健康运势</strong>
+                                </view>
+                                <text>{{item.jk}}</text>
+                            </view> -->
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="{{showAd?'show':'hide'}} adContainer">
+            <ad adTheme="white" adType="video" bindclose="adClose" binderror="adError" bindload="adLoad" unitId="adunit-53369560b9987e89"></ad>
+        </view>
+        <view class="invite_btn">
+            <button id="invite_friend" openType="share">邀请好友查运势</button>
+        </view>
+    </view>
+</view>

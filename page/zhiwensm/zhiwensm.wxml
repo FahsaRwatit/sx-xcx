@@ -1,0 +1,84 @@
+<view>
+  <view>
+    <view>
+      <image class="zhiwenimg" src="../../images/zhiwen.png"></image>
+    </view>
+    <view class="jianjie">
+      人的指纹是终生不变的，指纹算命透过指纹来揭示你所蕴藏的关于性格和命运的信息。指纹的「涡纹」和「蹄状纹」两种纹路，可以用来判断性格及命运倾向。指纹是依据易理所分解阴、阳的性质而来，阴为「蹄状纹－Ｘ」、阳为「涡纹－Ｏ」。方法如下：男左手，女右手。
+    </view>
+
+    <view class="finger1Box">
+      <radio-group class="zhiwenGroup" bindchange="radioChange1">
+        <text class="zwtxt">大拇指</text>
+        <radio value="x" checked="true" />簸箕纹
+        <radio class="radio2" value="o" checked="false" />箩纹
+      </radio-group>
+    </view>
+  
+    <view class="finger2Box">
+      <radio-group class="zhiwenGroup" bindchange="radioChange2">
+        <text class="zwtxt">食　指 </text>
+        <radio value="x" checked="true" />簸箕纹
+        <radio class="radio2" value="o" checked="false" />箩纹
+      </radio-group>
+    </view>
+
+    <view class="finger3Box">
+      <radio-group class="zhiwenGroup" bindchange="radioChange3">
+        <text class="zwtxt">中　指</text>
+        <radio value="x" checked="true" />簸箕纹
+        <radio class="radio2" value="o" checked="false" />箩纹
+      </radio-group>
+    </view>
+
+    <view class="finger4Box">
+      <radio-group class="zhiwenGroup" bindchange="radioChange4">
+        <text class="zwtxt">无名指</text>
+        <radio value="x" checked="true" />簸箕纹
+        <radio class="radio2" value="o" checked="false" />箩纹
+      </radio-group>
+    </view>
+
+    <view class="finger5Box">
+      <radio-group class="zhiwenGroup" bindchange="radioChange5">
+        <text class="zwtxt">小　指</text>
+        <radio value="x" checked="true" />簸箕纹
+        <radio class="radio2" value="o" checked="false" />箩纹
+      </radio-group>
+    </view>
+    <view bindtap="starttest" class="startBtn">开始测试</view>
+
+    <view class="zwresult">
+      分析结果：
+      <text class="resulttxt">{{zhiwenRes}}</text>
+    </view>
+    
+  
+  </view>
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

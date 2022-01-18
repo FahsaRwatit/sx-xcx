@@ -1,0 +1,25 @@
+<view class="app bg" style="background-image: url('{{host}}/images/xzbg.png?v=1.0')">
+    <view id="index">
+        <view class="open-box" wx:if="{{showTip}}">
+            <button bindopensetting="openSetting" class="open" openType="openSetting"> 点击授权用户信息-即可查看运势 </button>
+        </view>
+        <view class="banner">
+            <image class="top_banner" mode="widthFix" src="../../images/banner.png"></image>
+        </view>
+        <view class="main">
+            <view class="inner">
+                <view class="ul">
+                    <view bindtap="selectItem" class="list_box" data-id="{{item.id}}" data-name="{{item.text}}" id="xz{{item.id}}" wx:for="{{objectArray}}" wx:key="id">
+                        <button bindgetuserinfo="getUserInfo" class="img_btn" data-id="{{item.id}}" data-name="{{item.text}}" openType="getUserInfo" wx:if="{{!hasUserInfo&&canIUse}}"></button>
+                        <view class="con_img">
+                            <image mode="widthFix" src="{{item.imgSrc}}"></image>
+                        </view>
+                        <view class="text">{{item.text}}</view>
+                        <view class="date">{{item.date}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <updataPop></updataPop>
+</view>

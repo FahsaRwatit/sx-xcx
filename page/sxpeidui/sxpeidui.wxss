@@ -1,0 +1,13 @@
+
+.xzBox{
+  position:absolute;
+  width: 640rpx;
+  left: 55rpx;
+
+}
+.pickerBox{
+  display: inline-flex;
+  width: 50%;
+}
+
+

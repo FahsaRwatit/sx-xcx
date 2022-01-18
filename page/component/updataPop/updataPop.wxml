@@ -1,0 +1,17 @@
+<view class="maskPop" hidden="{{!isUpdataShow}}">
+    <view class="main">
+        <view class="box">
+            <view class="title">版本更新 1.1.0</view>
+            <view class="text">
+                <view>① 个人中心新增刷新按钮
+<text style="padding-left:34rpx;">可刷新个人信息</text>
+                </view>
+                <view>② 新增其他星座运势信息</view>
+                <view>③ 新增“星座配对”模块</view>
+            </view>
+        </view>
+        <view class="close">
+            <image bindtap="_closeUppdata" mode="aspectFit" src="/images/close_w.png"></image>
+        </view>
+    </view>
+</view>

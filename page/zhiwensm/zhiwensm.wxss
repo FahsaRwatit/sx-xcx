@@ -1,0 +1,84 @@
+.zhiwenimg{
+  position: absolute;
+  width: 640rpx;
+  height: 444rpx;
+  left: 55rpx;
+}
+.jianjie{
+  position: absolute;
+  width: 640rpx;
+  height: 80rpx;
+  left: 55rpx;
+  top: 470rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.finger1Box{
+  position: absolute;
+  width: 640rpx;
+  left: 55rpx;
+  top: 770rpx;
+}
+.finger2Box{
+  position: absolute;
+  width: 640rpx;
+  left: 55rpx;
+  top: 870rpx;
+}
+.finger3Box{
+  position: absolute;
+  width: 640rpx;
+  left: 55rpx;
+  top: 970rpx;
+}
+.finger4Box{
+  position: absolute;
+  width: 640rpx;
+  left: 55rpx;
+  top: 1070rpx;
+}
+.finger5Box{
+  position: absolute;
+  width: 640rpx;
+  left: 55rpx;
+  top: 1170rpx;
+}
+
+.zhiwenGroup{
+  text-align:  center;
+}
+.zwtxt{
+  margin-right: 50rpx;
+}
+.radio1{
+  margin-left: 50rpx;
+}
+.radio2{
+  margin-left: 50rpx;
+}
+
+.startBtn{
+  position: absolute;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  top: 1270rpx;
+  left: 275rpx;
+  background: #F0BD42;
+  text-align: center;
+  color: #9F0F0F;
+}
+.zwresult{
+  position: absolute;
+  width: 640rpx;
+  left: 55rpx;
+  top: 1370rpx;
+}
+.resulttxt{
+  width: 640rpx;
+  left: 55rpx;
+  top: 1470rpx;
+  text-align: center;
+}
+
+

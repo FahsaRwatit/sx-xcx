@@ -1,0 +1,33 @@
+<view>
+  <view></view>
+
+  <view>
+    <view class="xzBox">
+      <picker class="pickerBox"
+        mode="selector"
+        range="{{sxlist}}" 
+        value="{{sxlist[index1].id}}"
+        data-selecthSX="{{sxlist[index1].id}}"
+        range-key="{{'name'}}"
+        bindchange="bindPickerChangeNan"
+        >
+          生肖男：<label>{{sxlist[index1].name}}</label>
+        </picker>
+
+
+        <picker class="pickerBox"
+        mode="selector"
+        range="{{sxlist}}" 
+        value="{{sxlist[index2].id}}"
+        data-selecthSX="{{sxlist[index2].id}}"
+        range-key="{{'name'}}"
+        bindchange="bindPickerChangeNv"
+        >
+          生肖女：<label>{{sxlist[index2].name}}</label>
+        </picker>
+    </view>
+  </view>
+</view>
+
+
+
