@@ -10,7 +10,7 @@ Page({
     finger3: "o",
     finger4: "o",
     finger5: "o",
-    zhiwenRes: "",
+    jiexi: "",
   },
 
   /**
@@ -66,7 +66,7 @@ Page({
     var d = n.d;
     console.log(d);
     this.setData({
-      zhiwenRes: d.jiexi,
+      jiexi: d.jiexi,
     });
 
 

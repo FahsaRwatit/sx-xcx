@@ -15,13 +15,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* background-color: #3f84ca; */
 }
 
 #index .main .inner {
     width: 100%;
     margin: 0rpx auto;
     /* background: #fffdf4; */
-    background: #B72026;
+    /* background: #B72026; */
     border-radius: 8rpx;
     padding: 40rpx;
 }
@@ -131,7 +132,7 @@
 .banner {
     width: 100%;
     min-height: 200rpx;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .top_banner {
@@ -202,3 +203,9 @@
 .open:after {
     display: none;
 }
+.sxpdBox{
+    text-align: center;
+    color: #EBBC40;
+}
+
+

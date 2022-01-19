@@ -1,8 +1,14 @@
-<view>
-  <view></view>
 
-  <view>
-    <view class="xzBox">
+<view class="contentBox">
+<view class="conBox">
+  <view class="heartBox">
+    <image class="heart" src="../../images/heart.png"></image>
+  </view>
+  <view class="xzimgBox">
+    <image class="xzimg xzimg1" src="{{nanImg}}"></image>
+    <image class="xzimg xzimg2" src="{{nvImg}}"></image>
+  </view>
+  <view class="xzBox">
       <picker class="pickerBox"
         mode="selector"
         range="{{sxlist}}" 
@@ -11,7 +17,7 @@
         range-key="{{'name'}}"
         bindchange="bindPickerChangeNan"
         >
-          生肖男：<label>{{sxlist[index1].name}}</label>
+          生肖男⇋：<label>{{sxlist[index1].name}}</label>
         </picker>
 
 
@@ -23,11 +29,27 @@
         range-key="{{'name'}}"
         bindchange="bindPickerChangeNv"
         >
-          生肖女：<label>{{sxlist[index2].name}}</label>
+          生肖女⇋：<label>{{sxlist[index2].name}}</label>
         </picker>
-    </view>
   </view>
+
+  <view class="resBox">
+    <view class="chakanBox" bindtap="toRes">查看结果</view>
+    <view class="fxBox">
+      <button class="fxBtn" open-type="share" bindtap="gotoshare">分享转发</button>
+    </view>
+
+  </view>
+
+  
+
+  <view class="pdresult" hidden="{{!showRes}}">
+
+    <rich-text nodes="{{content}}" class="resulttxt"></rich-text>
+
+    <rich-text nodes="{{advise}}" class="resulttxt"></rich-text>
+
+  </view>
+
 </view>
-
-
-
+</view>

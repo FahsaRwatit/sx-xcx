@@ -15,6 +15,7 @@ var t = "www.huangergou.com", a = {
 
     sxGetData: "https://web.fahsa.cn/api/sx/getdata", // 十二生肖运程
     zhiwensm: "https://web.fahsa.cn/api/zw/zhiwensm", // 指纹算命
+    pdshengxiao: "https://web.fahsa.cn/api/pd/shengxiao", // 生肖配对
 };
 
 module.exports = a;

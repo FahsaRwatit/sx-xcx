@@ -12,8 +12,8 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#9F0F0F",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "生肖",
     "navigationBarTextStyle": "black",
     "backgroundColor": "#9F0F0F"
   },
@@ -26,14 +26,14 @@
       {
         "pagePath": "page/index/index",
         "text": "生肖运程",
-        "iconPath": "images/icon_xzys.png",
-        "selectedIconPath": "images/icon_xzys_HL.png"
+        "iconPath": "images/h1.png",
+        "selectedIconPath": "images/h2.png"
       },
       {
         "pagePath": "page/zhiwensm/zhiwensm",
         "text": "星座配对",
-        "iconPath": "images/icon_match.png",
-        "selectedIconPath": "images/icon_match_HL.png"
+        "iconPath": "images/g1.png",
+        "selectedIconPath": "images/g2.png"
       }
     ]
   },
