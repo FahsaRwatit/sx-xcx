@@ -18,7 +18,8 @@
 }
 
 #result .detail .main {
-  background: #ffffff;
+  /* background: #ffffff; */
+  background: url(https://qnres.fahsa.cn/xcx/shengxiao/pic/bg3.jpg);
   border-radius: 8rpx;
 }
 
@@ -112,6 +113,8 @@
 #result .detail .con {
   color: #333;
   padding: 30rpx 40rpx;
+  font-size: 30rpx;
+  line-height: 68rpx;
 }
 
 #result .detail .con strong {

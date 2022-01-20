@@ -4,7 +4,7 @@
             <button bindopensetting="openSetting" class="open" openType="openSetting"> 点击授权用户信息-即可查看运势 </button>
         </view>
         <view class="banner">
-            <image class="top_banner" mode="widthFix" src="../../images/banner1.jpg"></image>
+            <image class="top_banner" mode="widthFix" src="../../images/banner.jpg"></image>
         </view>
         <view class="main">
             <view class="inner">

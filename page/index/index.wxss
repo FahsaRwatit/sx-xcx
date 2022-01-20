@@ -25,6 +25,7 @@
     /* background: #B72026; */
     border-radius: 8rpx;
     padding: 40rpx;
+    margin-top: 30rpx;
 }
 
 #index .main .ul {
@@ -145,7 +146,6 @@
     text-align: center;
     /* color: #333333; */
     color: #F0BD42;
-    font-weight: bold;
 }
 
 .date {
@@ -206,6 +206,8 @@
 .sxpdBox{
     text-align: center;
     color: #EBBC40;
+    margin-top: 50rpx;
+    margin-bottom: 50rpx;
 }
 
 
